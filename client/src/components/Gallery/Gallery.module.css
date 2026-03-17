@@ -1,0 +1,49 @@
+.gallery {
+    padding: 100px 0;
+    background: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item {
+    text-align: left;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.item h2 {
+    font-size: 48px;
+    color: var(--dark-color);
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.item span {
+    margin-bottom: 40px;
+    font-weight: 800;
+}
+
+.item p {
+    color: var(--dark-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.item:hover img {
+    transform: scale(1.08);
+}

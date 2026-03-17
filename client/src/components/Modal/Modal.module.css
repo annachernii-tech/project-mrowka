@@ -1,0 +1,91 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 2000;
+}
+
+.modal {
+    background: white;
+    width: 100%;
+    max-width: 420px;
+    border-radius: 10px;
+    padding: 40px 30px;
+    position: relative;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 26px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form input,
+.form textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.submit {
+    margin-top: 10px;
+    padding: 14px;
+    border: none;
+    background: #f7c600;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.submit:hover {
+    background: #e6b800;
+}
+
+.contactInfo {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.contactInfo a {
+    display: block;
+    margin-top: 6px;
+    font-weight: 600;
+    color: black;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.close img {
+    width: 18px;
+}

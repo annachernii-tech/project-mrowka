@@ -1,0 +1,94 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 72px;
+    width: auto;
+}
+
+.nav {
+    display: flex;
+    gap: 60px;
+}
+
+.nav a {
+    position: relative;
+    padding-bottom: 6px;
+    color: var(--dark-color);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.active::after {
+    width: 100%;
+}
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--primary-color);
+    transition: width 0.3s;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+.phone {
+    color: var(--dark-color);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.burger {
+    display: none;
+}
+
+.langSwitcher {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.langBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--dark-color);
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+.langBtn:hover {
+    opacity: 1;
+}
+
+.langActive {
+    opacity: 1;
+    font-weight: 700;
+}
+
+.dividerBtn {
+    color: var(--dark-color);
+    opacity: 0.5;
+}

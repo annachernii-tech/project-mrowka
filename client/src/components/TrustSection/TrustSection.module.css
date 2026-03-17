@@ -1,0 +1,57 @@
+.trust {
+    padding: 100px 0;
+    background: white;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.wrapper h2 {
+    font-size: 48px;
+    color: var(--dark-color);
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.wrapper span {
+    margin-bottom: 40px;
+    font-weight: 800;
+}
+
+.wrapper p {
+    color: var(--dark-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    max-width: 700px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.item {
+    text-align: center;
+}
+
+.item img {
+    height: 40px;
+    margin-bottom: 12px;
+}
+
+.item p {
+    color: var(--dark-color);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 160%;
+    text-transform: none;
+    margin-bottom: 20px;
+}
